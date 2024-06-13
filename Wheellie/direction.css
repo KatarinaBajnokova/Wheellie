@@ -1,0 +1,332 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-car {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    height: 210px;
+    background-color: #fffbf7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+}
+
+.header-car .burger-king,
+.header-car .your-position {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #321a0b;
+    margin: 5px 0;
+}
+
+.header-car .text-wrapper {
+    font-family: "Arial-Regular", Helvetica;
+    font-weight: 400;
+    color: #7e7875;
+    font-size: 20px;
+}
+
+.header-car .route-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.header-car .car-route-icon,
+.header-car .bus-route-button,
+.header-car .walk-route-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header-car .img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-car .img-2 {
+    width: 25px;
+    height: 25px;
+}
+
+.header-car .time,
+.header-car .div,
+.header-car .time-2 {
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #321a0b;
+    font-size: 20px;
+}
+
+.header-car .back {
+    font-family: "Arial-Regular", Helvetica;
+    font-weight: 400;
+    color: #321a0b;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.car-information {
+    position: relative;
+    width: 100%;
+    height: 212px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1000; 
+    top: 80%;
+}
+
+.car-information .direction-button {
+    display: flex;
+    width: 160px;
+    height: 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    background-color: #cea47c;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.car-information .direction-icon {
+    position: relative;
+    width: 22.71px;
+    height: 22.71px;
+    margin-top: 50%;
+    margin-bottom: -20%;
+}
+
+.car-information .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    margin-right: -3.71px;
+    font-family: "Arial-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.car-information .adress {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    font-family: "Arial-Regular", Helvetica;
+    font-weight: 400;
+    color: #271c18;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.car-information .time-km {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #271c18;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.car-information .car-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 11%;
+    left: 42%;
+}
+
+.route-buttons div {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.route-buttons .active {
+    opacity: 1;
+}
+
+
+.direction-button {
+    background-color: #cea47c; 
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+}
+
+
+.direction-button:hover {
+    background-color: #b89c74; 
+}
+
+
+.direction-button.cancel {
+    background-color: #A0A0A0; 
+}
+
+
+.direction-button.cancel:hover {
+    background-color: #7E7875; 
+}
+
+
+.direction-button:active {
+    background-color: #d3d3d3; 
+}
+
+.route-details .summary {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.route-details .summary:hover {
+    background-color: #e0e0e0;
+}
+
+.route-details .details {
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+    border-top: 1px dashed #ccc;
+}
+
+#infoPanel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+
+
+
+.warning-icon {
+    display: flex;
+    padding: 15px;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    background-color: #fffbf7;
+    border-radius: 60px;
+    z-index: 1000;
+}
+
+.warning-icon .img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#map {
+    height: calc(100vh - 270px); 
+}
+#infoPanel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none; 
+}
+
+
+.bus-information {
+    position: fixed; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    max-width: 600px;
+    height: 200px;
+    background-color: #ffffff;
+    z-index: 1002; 
+    display: none; 
+}
+.public-transport-option {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 8px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.public-transport-option img {
+    width: 60%;
+    height: 60%; 
+
+}
+
+.transport-details {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15%;  
+    left: 2%; 
+    width: 30px;  
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.ad-container {
+    width: 970px;
+    height: 250px;
+    position: relative;
+    background-color: #FDEFE3;
+    background-image: url('imgs/wheelchair-image-beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; 
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    opacity: 0;
+}
+
+.features {
+    position: absolute;
+    top: 38%;
+    right: 12%;
+    transform: translateY(-50%);
+}
+
+.feature-item {
+    font-size: 20px;
+    font-weight: bold;
+    color: #321A0B;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+.cta {
+    position: absolute;
+    bottom: 30px;
+    right: 11%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #321A0B;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent; 
+}
+
+    .cta:hover {
+        background-color: #321A0B; 
+        color: #FFFFFF; 
+        transform: scale(1.1); 
+        border-color: #321A0B; 
+    }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wheellie Directions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="direction.css">
+</head>
+<body>
+    <div class="header-car">
+        <button id="backButton" class="back-button">
+            <img src="direction/back.png" alt="Back" />
+        </button>
+        <div class="burger-king"><div class="text-wrapper">Burger King</div></div>
+        <div class="your-position"><div class="text-wrapper">Your position</div></div>
+        <div class="route-buttons">
+            <div class="car-route-icon active" id="carRoute">
+                <img class="img" src="direction/Car%20Route%20Icon.svg" alt="Car Route Icon">
+                <div class="time">17 min</div>
+            </div>
+            <div class="bus-route-button" id="busRoute">
+                <img class="img-2" src="direction/Bus%20Icon.svg" alt="Bus Icon">
+                <div class="div">23 min</div>
+            </div>
+            <div class="walk-route-button" id="walkRoute">
+                <img class="img-2" src="direction/Walk%20Icon.svg" alt="Walk Icon">
+                <div class="time-wrapper"><div class="time-2">44 min</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-information">
+        <div class="direction-button" id="directionButton">
+            <img class="direction-icon" src="img/direction-icon.svg" alt="Direction Icon">
+            <div class="text-wrapper" id="directionButtonText">Direction</div>
+        </div>
+        <div class="bus-information" style="display: none;">
+            <div class="public-transport-option" id="option1">
+                <img src="direction/First%20Option%20of%20Public%20Transport.svg" alt="First Option of Public Transport">
+            </div>
+            <div class="public-transport-option" id="option2">
+                <img src="direction/Second%20Option%20of%20Public%20Transport.svg" alt="Second Option of Public Transport">
+            </div>
+            <div class="public-transport-option" id="option3">
+                <img src="direction/Third%20Option%20Of%20Public%20Transport.svg" alt="Third Option of Public Transport">
+            </div>
+        </div>
+        <p class="adress">Chau. d/Ixelles 53, 1050, Ixelles</p>
+        <div class="time-km">17 min (4.4 km)</div>
+        <img class="car-icon" src="direction/Car%20Route%20Icon.svg" alt="Car Route Icon">
+    </div>
+
+    <div id="map"></div>
+    <div id="infoPanel" class="info-panel"></div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="direction.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wheellie</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="search">
+        <img src="main-img/search-icon.svg" alt="Search" class="search-icon">
+        <input type="text" class="div" placeholder="Search..." id="searchInput">
+    </div>
+
+    <div class="warning-icon">
+        <img src="main-img/warning-icon.svg" alt="Warning" class="img">
+    </div>
+
+    <div class="report-base-BASIC" style="display: none;">
+        <div class="div">
+            <div class="row">
+                <div class="icon-container">
+                    <img class="accessible-button" src="report-tab/accessible-icon.svg" alt="Accessible">
+                    <span>Accessible</span>
+                </div>
+                <div class="icon-container">
+                    <img class="inaccessible-button" src="report-tab/inaccessible-icon.svg" alt="Inaccessible">
+                    <span>Inaccessible</span>
+                </div>
+                <div class="icon-container">
+                    <img class="stairs" src="report-tab/stairs-icon.svg" alt="Stairs">
+                    <span>Stairs</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="icon-container">
+                    <img class="stairs-free" src="report-tab/stairs-free-icon.svg" alt="Stairs Free">
+                    <span>Stairs Free</span>
+                </div>
+                <div class="icon-container">
+                    <img class="elevator" src="report-tab/elevator-icon.svg" alt="Elevator">
+                    <span>Elevator</span>
+                </div>
+                <div class="icon-container">
+                    <img class="elevator-free" src="report-tab/elevator-free-icon.svg" alt="Elevator Free">
+                    <span>Elevator Free</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="icon-container">
+                    <img class="closed-road" src="report-tab/closed-road-icon.svg" alt="Closed Road">
+                    <span>Closed Road</span>
+                </div>
+                <div class="icon-container">
+                    <img class="contrustrction-work" src="report-tab/construction-work-icon.svg" alt="Construction Work">
+                    <span>Construction</span>
+                </div>
+                <div class="icon-container">
+                    <img class="message" src="report-tab/message-icon.svg" alt="Message">
+                    <span>Message</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet"></script>
+    <script src="https://unpkg.com/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
